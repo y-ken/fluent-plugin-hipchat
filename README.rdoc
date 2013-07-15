@@ -13,17 +13,17 @@
       default_from fluentd
       default_color yellow
       default_notify 0
-      default_format html
+      default_message_format html
     </match>
 
 
     fluent_logger.post('hipchat', {
-      :from     => 'alice',
-      :message  => 'Hello<br>World!',
-      :color    => 'red',
-      :room     => 'my_room',
-      :notify   => 1,
-      :format   => 'text',
+      :from            => 'alice',
+      :message         => 'Hello<br>World!',
+      :color           => 'red',
+      :room            => 'my_room',
+      :notify          => 1,
+      :message_format  => 'text',
     })
 
 = Copyright
